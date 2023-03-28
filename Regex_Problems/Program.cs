@@ -13,7 +13,8 @@ namespace Regex_Problems
         {
             Console.WriteLine(" *** Problems using Regex *** \n");
             Console.WriteLine("take 1 option from given \n 1) Matches a string that has an ‘a’ followed by two\r\nto three 'b'" +
-                "\n 2) To Find sequences of lowercase letters joined by an underscore\n ");
+                "\n 2) To Find sequences of lowercase letters joined by an underscore" +
+                "\n 3) Regex to find valid file names with an image file type with extension.\n ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -23,6 +24,9 @@ namespace Regex_Problems
                     break;
                 case 2:
                     LowercaseLetters.LowercaseLettersJoinedByUnderscore();
+                    break;
+                case 3:
+                    ImageFileExTension.FileExtension();
                     break;
             }
         
