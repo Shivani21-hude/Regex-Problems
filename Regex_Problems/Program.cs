@@ -11,9 +11,22 @@ namespace Regex_Problems
     {
         static void Main(string[] args)
         {
-            
-            MathchesString Valid = new MathchesString();
-            Valid.Matchesstring();
+            Console.WriteLine(" *** Problems using Regex *** \n");
+            Console.WriteLine("take 1 option from given \n 1) Matches a string that has an ‘a’ followed by two\r\nto three 'b'" +
+                "\n 2) To Find sequences of lowercase letters joined by an underscore\n ");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    MathchesString Valid = new MathchesString();
+                    Valid.Matchesstring();
+                    break;
+                case 2:
+                    LowercaseLetters.LowercaseLettersJoinedByUnderscore();
+                    break;
+            }
+        
+        
         }
     }
 }
