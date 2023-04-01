@@ -15,7 +15,8 @@ namespace Regex_Problems
             Console.WriteLine("take 1 option from given \n 1) Matches a string that has an ‘a’ followed by two\r\nto three 'b'" +
                 "\n 2) To Find sequences of lowercase letters joined by an underscore" +
                 "\n 3) Regex to find valid file names with an image file type with extension.\n" +
-                " 4) Use Regular expression to validate a website address format.\n ");
+                " 4) Use Regular expression to validate a website address format.\n " +
+                " 5) Fetch HTML Tags using regex \n ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -31,6 +32,10 @@ namespace Regex_Problems
                     break;
                 case 4:
                     ValidWebsiteAddress.URLAddress();
+                    break;
+
+                case 5:
+                    Fetch_HTML_Tags.HTMLTags();
                     break;
             }
         
