@@ -12,7 +12,7 @@ namespace Regex_Problems
     {
         public static void LowercaseLettersJoinedByUnderscore()
         {
-            Regex regex = new Regex("^[a-z]+_[a-z]+$");
+            Regex regex = new Regex("^[a-z]+_+[a-z]+$");
             Console.WriteLine("Enter string with lowercase joined by underscore : ");
             string word=Console.ReadLine();
             if (regex.IsMatch(word))

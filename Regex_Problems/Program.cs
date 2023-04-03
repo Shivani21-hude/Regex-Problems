@@ -16,7 +16,8 @@ namespace Regex_Problems
                 "\n 2) To Find sequences of lowercase letters joined by an underscore" +
                 "\n 3) Regex to find valid file names with an image file type with extension.\n" +
                 " 4) Use Regular expression to validate a website address format.\n " +
-                " 5) Fetch HTML Tags using regex \n ");
+                " 5) Fetch HTML Tags using regex \n" +
+                " 6) find a particular word from a given sentence \n ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -37,6 +38,10 @@ namespace Regex_Problems
                 case 5:
                     Fetch_HTML_Tags.HTMLTags();
                     break;
+                case 6:
+                    NumberOfOccurrences.Occurrences();
+                    break;
+               
             }
         
         

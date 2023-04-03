@@ -19,7 +19,7 @@ namespace Regex_Problems
             string filename = Console.ReadLine();                                // ?i ignore case sensative
             if (regex.IsMatch(filename))
             {
-                Console.WriteLine("Valid file name");
+                Console.WriteLine("Valid file name");      //abc.jpe
             }
             else
             {

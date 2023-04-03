@@ -11,7 +11,7 @@ namespace Regex_Problems
     {
         public static void HTMLTags()
         {
-            string input = "<p>The <code>Regex</code> is a compiled representation of a regular expression.</p>”";
+            string input = "<p>The <code>Regex</code> is a compiled representation of a regular expression.</p>";
             string pattern = @"<[^>]+>";
 
             MatchCollection match1 = Regex.Matches(input, pattern);
